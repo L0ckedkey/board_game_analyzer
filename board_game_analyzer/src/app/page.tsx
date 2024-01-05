@@ -15,7 +15,7 @@ export default function Home() {
   const handlePOST = () => {
     axios({
       method: 'post',
-      url: 'http://10.22.65.109:8000/predict',
+      url: 'http://62.72.23.195:9003/predict',
       data: {
         review: review // Use the state variable here
       }
