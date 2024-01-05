@@ -15,7 +15,7 @@ export default function Home() {
   const handlePOST = () => {
     axios({
       method: 'post',
-      url: 'http://localhost:8000/predict',
+      url: 'http://10.22.65.109:8000/predict',
       data: {
         review: review // Use the state variable here
       }
@@ -41,7 +41,7 @@ export default function Home() {
       });
   }
 
-  const handleTextareaChange = (e) => {
+  const handleTextareaChange = (e:any) => {
     setReview(e.target.value); // Update the state when the Textarea value changes
   }
 
